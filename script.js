@@ -47,6 +47,7 @@ function mostrarFormJogador1() {
 
     var resultadoDiv = document.getElementById('resultado');
     resultadoDiv.innerText = 'O vencedor é: ' + vencedor + '\nSoma dos números: ' + soma;
+    document.getElementById("img").innerHTML = "<img src='img/Trofeu pixel art.png' width='258'> ";
 
     var jogador2Form = document.getElementById('jogador2Form');
     var voltarInicioButton = document.getElementById('voltarInicio');
