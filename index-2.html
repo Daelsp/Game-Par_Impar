@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Par ou Ímpar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="nomesForm">
+    <h1>Jogo do Par ou Ímpar</h1>
+    <form>
+      <label for="jogador1">Nome do Jogador 1:</label>
+      <input type="text" id="jogador1Input" required><br>
+      <label for="jogador2">Nome do Jogador 2:</label>
+      <input type="text" id="jogador2Input" required><br>
+      <button type="button" onclick="mostrarFormJogador1()">Próximo</button>
+    </form>
+  </div>
+
+  <div id="jogador1Form" class="hidden">
+    <h2><span id="nomeJogador1"></span>, Escolha Par ou Ímpar e seu número</h2>
+    <form>
+      <label for="escolhaJogador1">Escolha<span id="nomeJogador1"></span>:</label>
+      <select id="escolhaJogador1" required>
+        <option value="">Escolha Par ou Ímpar</option>
+        <option value="par">Par</option>
+        <option value="impar">Ímpar</option>
+      </select><br>
+      <label for="numeroJogador1">Número<span id="nomeJogador1"></span>:</label>
+      <input type="password" id="numeroJogador1" required><br>
+      <button type="button" onclick="mostrarFormJogador2()">Próximo</button>
+    </form>
+  </div>
+
+  <div id="jogador2Form" class="hidden">
+    <h2>Número de <span id="nomeJogador2"></span></h2>
+    <form>
+      <label for="numeroJogador2">Número<span id="nomeJogador2"></span>:</label>
+      <input type="password" id="numeroJogador2" required><br>
+      <button type="button" onclick="calcularResultado()">Jogar</button>
+    </form>
+  </div>
+
+  <div id="resultado" class="hidden"></div>
+
+  <button id="voltarInicio" class="hidden" onclick="voltarInicio()">Voltar ao Início</button>
+
+  <script src="script.js"> </script>
+</body>
+</html>
