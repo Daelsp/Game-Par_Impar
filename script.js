@@ -61,6 +61,7 @@ function mostrarFormJogador1() {
     var nomesForm = document.getElementById('nomesForm');
     var resultadoDiv = document.getElementById('resultado');
     var voltarInicioButton = document.getElementById('voltarInicio');
+    document.getElementById("img").innerHTML = "";
 
     nomesForm.classList.remove('hidden');
     resultadoDiv.classList.add('hidden');
